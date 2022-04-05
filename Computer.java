@@ -37,7 +37,7 @@ public class Computer {
         return RAM;
     }
 
-    public void ComputerInformation() {
+    public void computerInformation() {
         System.out.println("Os name: " + getOsName());
         System.out.println("System architecture information: " + getSystemArch());
         System.out.println(getRAM());
@@ -85,9 +85,4 @@ public class Computer {
         return "\n" + "==============HArd Disk Infromation================\n" + output;
     }
 
-
-    public static void main(String[] args) throws IOException, InterruptedException{
-        Computer comp = new Computer();
-        comp.ComputerInformation();
-    }
 }
