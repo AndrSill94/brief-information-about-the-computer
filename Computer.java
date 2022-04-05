@@ -8,18 +8,16 @@ public class Computer {
     private String systemArch;
     private String RAM;
 
-
     /**
      * Constructor initialize information
      */
-
-
     public Computer() throws IOException, InterruptedException{
         this.processor = System.getenv("PROCESSOR_ARCHITEW6432");
         this.osName = System.getProperty("os.name");
         this.systemArch = System.getProperty("os.arch");
         this.RAM = ramInitialize();
     }
+
 
     public String getProcessor() {
         return processor;
@@ -63,6 +61,7 @@ public class Computer {
             return "Unknown value";
         }
     }
+
 
     public static void main(String[] args) throws IOException, InterruptedException{
         Computer comp = new Computer();
